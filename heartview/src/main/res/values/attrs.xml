@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HeartView">
+        <attr name="heart_sizeBasic" format="enum">
+            <enum name="none" value="0" />
+            <enum name="width" value="1" />
+            <enum name="height" value="2" />
+        </attr>
+        <attr name="heart_color" format="reference|color" />
+        <attr name="heart_edgeColor" format="reference|color" />
+        <attr name="heart_centerX" format="reference|float" />
+        <attr name="heart_centerY" format="reference|float" />
+        <attr name="heart_radius" format="reference|float" />
+        <attr name="heart_strokeColor" format="reference|color" />
+        <attr name="heart_strokeWidth" format="reference|dimension" />
+    </declare-styleable>
+</resources>

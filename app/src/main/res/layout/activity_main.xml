@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <per.goweii.heartview.HeartView
+            android:id="@+id/heartView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#fff"
+            app:heart_color="#6F00"
+            app:heart_edgeColor="#FF00"
+            app:heart_centerX="-0.5"
+            app:heart_centerY="-0.5"
+            app:heart_sizeBasic="width"
+            app:heart_strokeColor="#0F00"
+            app:heart_strokeWidth="0dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="内边距" />
+
+            <SeekBar
+                android:id="@+id/sb_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3000"
+                android:max="150"
+                android:progress="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="渐变半径" />
+
+            <SeekBar
+                android:id="@+id/sb_radius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3000"
+                android:max="1000"
+                android:progress="800" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="实心中心颜色" />
+
+            <SeekBar
+                android:id="@+id/sb_solid_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3000"
+                android:max="255"
+                android:progress="255" />
+
+            <SeekBar
+                android:id="@+id/sb_solid_r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F00"
+                android:max="255"
+                android:progress="255" />
+
+            <SeekBar
+                android:id="@+id/sb_solid_g"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0F0"
+                android:max="255"
+                android:progress="128" />
+
+            <SeekBar
+                android:id="@+id/sb_solid_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00F"
+                android:max="255"
+                android:progress="200" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="实心边缘颜色" />
+
+            <SeekBar
+                android:id="@+id/sb_solid_edge_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3000"
+                android:max="255"
+                android:progress="255" />
+
+            <SeekBar
+                android:id="@+id/sb_solid_edge_r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F00"
+                android:max="255"
+                android:progress="255" />
+
+            <SeekBar
+                android:id="@+id/sb_solid_edge_g"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0F0"
+                android:max="255"
+                android:progress="0" />
+
+            <SeekBar
+                android:id="@+id/sb_solid_edge_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00F"
+                android:max="255"
+                android:progress="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="描边宽度" />
+
+            <SeekBar
+                android:id="@+id/sb_stroke_w"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3000"
+                android:max="150"
+                android:progress="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="描边颜色" />
+
+            <SeekBar
+                android:id="@+id/sb_stroke_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3000"
+                android:max="255"
+                android:progress="255" />
+
+            <SeekBar
+                android:id="@+id/sb_stroke_r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F00"
+                android:max="255"
+                android:progress="255" />
+
+            <SeekBar
+                android:id="@+id/sb_stroke_g"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0F0"
+                android:max="255"
+                android:progress="255" />
+
+            <SeekBar
+                android:id="@+id/sb_stroke_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00F"
+                android:max="255"
+                android:progress="0" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
